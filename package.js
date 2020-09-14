@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'chfritz:serversync',
-  version: '0.4.9',
+  name: 'merlyn:serversync',
+  version: '0.5.0',
   summary: 'Synchronize collections across multiple meteor servers (belonging to separate apps)',
-  git: 'https://github.com/chfritz/meteor-serversync',
+  git: 'https://github.com/BenjaminMerlynS/meteor-serversync.git',
   documentation: 'README.md'
 });
 
@@ -18,6 +18,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('chfritz:serversync');
+  api.use('merlyn:serversync');
   api.mainModule('serversync-tests.js');
 });
