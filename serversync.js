@@ -1,8 +1,8 @@
 import { Meteor } from "meteor/meteor";
 import { DDP } from "meteor/ddp-client";
 
-const logger = console.log;
-// const logger = function(){};
+//const logger = console.log;
+const logger = function(){};
 
 /** the local change set, i.e., things that have changed locally but
     have not yet been synced up, e.g., because we were/are offline */

@@ -1,7 +1,7 @@
 Package.describe({
   name: 'merlyn:serversync',
-  version: '0.5.0',
-  summary: 'Synchronize collections across multiple meteor servers (belonging to separate apps)',
+  version: '0.5.2',
+  summary: 'Adapted - Synchronize collections across multiple meteor servers (belonging to separate apps)',
   git: 'https://github.com/BenjaminMerlynS/meteor-serversync.git',
   documentation: 'README.md'
 });

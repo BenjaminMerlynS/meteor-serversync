@@ -1,4 +1,4 @@
-# ServerSync
+# ADAPTED - ServerSync
 
 This package provides server-to-server syncing of collections. It is
 modeled along the lines of what clients do, too, i.e., collections are
