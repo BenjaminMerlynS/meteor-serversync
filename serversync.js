@@ -307,7 +307,7 @@ export default class ServerSyncClient {
             change._synced = true;
             ChangeSet.upsert(id, change);
             options.beforeSyncUp && options.beforeSyncUp("insert", id, obj);
-            remoteCollection.insert(id, obj);
+            remoteCollection.insert(obj);
             options.afterSyncUp && options.afterSyncUp("insert", id, obj);
             logger("added to remote");
           } else {
@@ -496,7 +496,7 @@ export default class ServerSyncClient {
           && options.beforeSyncUp(changeInfo.action, id, changeInfo.obj);
 
         if (changeInfo.action == "insert") {
-          remoteCollection.insert(id, changeInfo.obj, function(err, res) {
+          remoteCollection.insert(changeInfo.obj, function(err, res) {
             logger("insert local -> remote:", id, err, res);
             const localCollection =
               self._collections[changeInfo.collectionName].local;
